@@ -7,7 +7,7 @@
 <p align="center"><em style="color:#cccccc">We don’t wait for threats. We obliterate them.</em></p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/26xBwdIuR0KFb5C2c/giphy.gif" width="420" alt="Cyber Glitch"/>
+  <img src="https://media.giphy.com/media/hun4DFmfnDId3lid5b/giphy.gif" width="420" alt="Cyber Threat Neutralization"/>
 </p>
 
 <p align="center" style="color:#dddddd">
@@ -18,22 +18,24 @@
 
 ---
 
-### <samp style="color:#00ffff">🚀 Operational Impact</samp>
+### <samp style="color:#00ffff">🚀 </samp>
 
-- 💥 <strong>500,000+</strong> phishing domains wiped
-- 🧠 <strong>15+</strong> core actor cells identified & mapped
-- 🧨 <strong>25+</strong> full-scale infrastructure takedowns
-- 🛠️ <strong>50+</strong> crypto-drain kits neutralized
+- 💥 <strong>500,000+</strong> phishing domains neutralized
+- 🧠 <strong>15+</strong> actor cells identified & mapped
+- 🕸️ <strong>25+</strong> full-scale infrastructure takedowns
+- ⚰️ <strong>50+</strong> crypto-drain kits neutralized
 
 <p align="center">
+
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FFFF&center=true&vCenter=true&multiline=true&width=480&lines=%F0%9F%94%92+They+bought+50.+We+banned+51." alt="Typing SVG"/>
+
   <img src="https://img.shields.io/badge/Threats-500K+-ff0033?style=flat-square"/>
   <img src="https://img.shields.io/badge/Actor_Networks-25%2B-000000?style=flat-square"/>
 </p>
 
 ---
 
-### <samp style="color:#00ffff">🔗 Real-Time Alerts</samp>
+### <samp style="color:#00ffff">🔗 </samp>
 
 <p align="center">
   <a href="https://www.phishdestroy.io/"><img src="https://img.shields.io/badge/Site-phishdestroy.io-00CED1?style=for-the-badge"/></a>
@@ -45,7 +47,7 @@
 
 ---
 
-### <samp style="color:#00ffff">🛡️ Operational Doctrine</samp>
+### <samp style="color:#00ffff">🛡️ </samp>
 
 | Phase        | Description                                                   | Status      |
 |--------------|---------------------------------------------------------------|-------------|
@@ -82,11 +84,15 @@
 
 ---
 
-### <samp style="color:#00ffff">📊 GitHub Stats</samp>
+### <samp style="color:#00ffff">📊 </samp>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=phishdestroy&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="GitHub Stats"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=phishdestroy&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1400&color=00FFFF&center=true&width=480&lines=%F0%9F%92%80+No+return.+No+survivors.;%F0%9F%9A%A8+Permanent+shutdowns+only.;%F0%9F%94%A5+Neutralize.+Erase.+Repeat." alt="Typing SVG 2"/>
 </p>
 
 <p align="center">
@@ -95,7 +101,7 @@
 
 ---
 
-### <samp style="color:#00ffff">🤝 Connect</samp>
+### <samp style="color:#00ffff">🤝 </samp>
 
 <p align="center">
   <a href="https://github.com/phishdestroy"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32"/></a>
@@ -104,7 +110,7 @@
 
 ---
 
-## 🤝 Contributing
+## 🤝 
 
 We welcome:
 
