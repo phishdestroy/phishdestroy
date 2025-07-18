@@ -26,6 +26,7 @@
 - ⛓️ <strong>50+</strong> drainer teams dismantled
 
 <p align="center">
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Scammers+love+takedowns%E2%9B%94%EF%B8%8F)](https://git.io/typing-svg)
   <img src="https://img.shields.io/badge/Threats-500K+-ff0033?style=flat-square"/>
   <img src="https://img.shields.io/badge/Actor_Networks-25%2B-000000?style=flat-square"/>
 </p>
@@ -40,7 +41,7 @@
   <a href="https://t.me/PhishDestroyAlerts"><img src="https://img.shields.io/badge/Telegram-Alerts-2CA5E0?style=for-the-badge"/></a>
 </p>
 
-<p align="center"><strong>@PhishDestroyAlerts</strong></p>
+<p align="center"><strong>[@PhishDestroyAlerts](https://t.me/PhishDestroyAlerts)</strong></p>
 
 ---
 
@@ -56,6 +57,8 @@
 ---
 
 <p align="center">
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=%F0%9F%94%92+They+bought+50.+We+banned+51.)](https://git.io/typing-svg)
+  
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/uniswap-colored.svg" width="32"/>
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aave-colored.svg" width="32"/>
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sushiswap-colored.svg" width="32"/>
@@ -64,7 +67,6 @@
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nansen-colored.svg" width="32"/>
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/chainlink-colored.svg" width="32"/>
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/the-graph-colored.svg" width="32"/>
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cloudflare-colored.svg" width="32"/>
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/alchemy-colored.svg" width="32"/>
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/hardhat-colored.svg" width="32"/>
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/ipfs-colored.svg" width="32"/>
@@ -102,6 +104,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="snake gif"/>
 </p>
+
 ## 🤝 Contributing
 
 We welcome:
