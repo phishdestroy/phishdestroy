@@ -99,8 +99,9 @@
 ---
 
 <p align="center"><em style="color:#aaaaaa">Precision ops. No mercy. Full erasure.</em></p>
-![snake gif](https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg)
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="snake gif"/>
+</p>
 ## 🤝 Contributing
 
 We welcome:
