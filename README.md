@@ -26,7 +26,7 @@
 - ⛓️ <strong>50+</strong> drainer teams dismantled
 
 <p align="center">
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Scammers+love+takedowns%E2%9B%94%EF%B8%8F)](https://git.io/typing-svg)
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=%F0%9F%94%92+They+bought+50.+We+banned+51." alt="Typing SVG" /></a>
   <img src="https://img.shields.io/badge/Threats-500K+-ff0033?style=flat-square"/>
   <img src="https://img.shields.io/badge/Actor_Networks-25%2B-000000?style=flat-square"/>
 </p>
