@@ -52,7 +52,11 @@ Our operational cycle is an unrelenting loop: proactive <b>scanning</b> of the d
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=phishdestroy&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
 </p>
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/phishdestroy/phishdestroy/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/phishdestroy/phishdestroy/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/phishdestroy/phishdestroy/output/pacman-contribution-graph.svg">
+</picture>
 <a href="https://uniswap.org/" target="_blank" rel="noreferrer"><picture>
 <img height="36" width="36" src="https://raw.githubusercontent.com/ShahVandit8/profile-x/refs/heads/main/public/icons/skills/uniswap-colored.svg" alt="Uniswap" />
 </picture></a> &nbsp;
@@ -113,9 +117,3 @@ Our operational cycle is an unrelenting loop: proactive <b>scanning</b> of the d
 <a href="https://www.nansen.ai/" target="_blank" rel="noreferrer"><picture>
 <img height="36" width="36" src="https://raw.githubusercontent.com/ShahVandit8/profile-x/refs/heads/main/public/icons/skills/nansen-colored.svg" alt="Nansen" />
 </picture></a> &nbsp;
-
-
-
-
-
-<!-- Thank you for using ProfileX - https://profilex.dev [by Vandit Shah] -->
