@@ -1,90 +1,91 @@
 <p align="center">
-  <img src="https://github.com/phishdestroy/phishdestroy/blob/main/assets/banner.png?raw=true" alt="PhishDestroy Banner" width="1200"/>
+<img src="image.png" alt="Phish Destroy Banner"/>
 </p>
 
-<h1 align="center">🔒 PhishDestroy: Active Threat Neutralization</h1>
+<h1 align="center" style="color:#00ffff;">🔒 PhishDestroy: Active Threat Neutralization</h1>
+
+<p align="center"><em style="color:#cccccc">We don’t wait for threats. We obliterate them.</em></p>
 
 <p align="center">
-  <em>We don’t wait for threats. We obliterate them.</em>
+  <img src="https://media.giphy.com/media/26xBwdIuR0KFb5C2c/giphy.gif" width="420" alt="Cyber Glitch"/>
 </p>
 
-<p align="center">
-  <img src="https://media.giphy.com/media/26xBwdIuR0KFb5C2c/giphy.gif" alt="Cyber Glitch Animation" width="400" style="filter: hue-rotate(200deg);"/>
-</p>
-
-<p align="center">
-  We scan, hunt, and destroy phishing threats with precision. Over 500,000+ neutralized in 5 years.
+<p align="center" style="color:#dddddd">
+  We scan, hunt, and destroy phishing infrastructure at scale.<br/>
+  Neutralized: <strong style="color:#ff4444">500,000+</strong> domains, <strong style="color:#ffaa00">25+</strong> networks, <strong style="color:#00ffff">15+</strong> actor cells.<br/>
+  <em>— We don’t block. We burn it all down.</em>
 </p>
 
 ---
 
-### <samp>🚀 Impact (5 Years)</samp>
+### <samp style="color:#00ffff">🚀 Operational Impact</samp>
 
-- 💥 **500,000+** Phishing domains neutralized
-- 🕵️ **15+** Major investigations with full deanonymization of threat actors
-- 🏴‍☠️ **25+** Organized scam operations dismantled
-- ⛓️ **50+** Crypto-drainer team taken offline
+- 💥 <strong>500,000+</strong> phishing domains neutralized
+- 🕵️ <strong>15+</strong> full deanonymizations
+- 🏴‍☠️ <strong>25+</strong> scam networks erased
+- ⛓️ <strong>50+</strong> drainer teams dismantled
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Threats_Neutralized-500,000+-ff0000?style=flat-square" alt="Neutralized Threats"/>
-  <img src="https://img.shields.io/badge/Networks_Dismantled-25+-000000?style=flat-square" alt="Dismantled Networks"/>
+  <img src="https://img.shields.io/badge/Threats-500K+-ff0033?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Actor_Networks-25%2B-000000?style=flat-square"/>
 </p>
 
 ---
 
-### <samp>🔗 Alerts</samp>
+### <samp style="color:#00ffff">🔗 Real-Time Alerts</samp>
 
 <p align="center">
-  <a href="https://www.phishdestroy.io/"><img src="https://img.shields.io/badge/Website-phishdestroy.io-00CED1?style=for-the-badge" alt="Website"></a>
-  <a href="https://twitter.com/Phish_Destroy"><img src="https://img.shields.io/badge/X-@Phish_Destroy-000000?style=for-the-badge" alt="X"></a>
-  <a href="https://t.me/PhishDestroyAlerts"><img src="https://img.shields.io/badge/Telegram-Alerts-00CED1?style=for-the-badge" alt="Telegram"></a>
+  <a href="https://www.phishdestroy.io/"><img src="https://img.shields.io/badge/Site-phishdestroy.io-00CED1?style=for-the-badge"/></a>
+  <a href="https://twitter.com/Phish_Destroy"><img src="https://img.shields.io/badge/X-@Phish_Destroy-000000?style=for-the-badge"/></a>
+  <a href="https://t.me/PhishDestroyAlerts"><img src="https://img.shields.io/badge/Telegram-Alerts-2CA5E0?style=for-the-badge"/></a>
 </p>
 
-<p align="center">
-  <a href="https://t.me/PhishDestroyAlerts">@PhishDestroyAlerts</a>
-</p>
+<p align="center"><strong>@PhishDestroyAlerts</strong></p>
 
 ---
 
-### <samp>🛡️ Doctrine</samp>
+### <samp style="color:#00ffff">🛡️ Operational Doctrine</samp>
 
-| Phase    | Status    |
-|----------|-----------|
-| 🌐 Scan  | ALWAYS-ON |
-| 🎯 Hunt  | ACTIVE    |
-| ⚡ Strike | RELENTLESS|
-| 🔥 Erase | STANDARD  |
-
----
-
-<p align="center">
-  <a href="https://ethereum.org/en/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/ethereum-colored.svg" width="36" height="36" alt="Ethereum" style="filter: hue-rotate(180deg);"/></a>
-  <a href="https://solana.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/solana-colored.svg" width="36" height="36" alt="Solana" style="filter: hue-rotate(180deg);"/></a>
-  <a href="https://polygon.technology/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/polygon-colored.svg" width="36" height="36" alt="Polygon" style="filter: hue-rotate(180deg);"/></a>
-  <a href="https://hardhat.org/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/hardhat-colored.svg" width="36" height="36" alt="Hardhat" style="filter: hue-rotate(180deg);"/></a>
-</p>
-
----
-
-### <samp>📊 Stats</samp>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=phishdestroy&theme=dark&include_all_commits=true" alt="GitHub Stats"/>
-  <img src="https://github.com/phishdestroy/phishdestroy/blob/output/pacman-contribution-graph.svg" alt="Pac-Man Contributions"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=phishdestroy&theme=dark" alt="GitHub Streak"/>
-</p>
-
----
-
-### <samp>🤝 Socials</samp>
-
-<p align="center">
-  <a href="https://github.com/phishdestroy"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" alt="GitHub" style="filter: hue-rotate(180deg);"/></a>
-  <a href="https://twitter.com/Phish_Destroy"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg" width="32" height="32" alt="Twitter" style="filter: hue-rotate(180deg);"/></a>
-</p>
+| Phase        | Description                                                   | Status      |
+|--------------|---------------------------------------------------------------|-------------|
+| 🌐 SCAN      | Autonomous threat reconnaissance                              | ALWAYS-ON   |
+| 🎯 HUNT      | Deep infrastructure analysis, asset correlation               | ACTIVE      |
+| ⚡ STRIKE    | Registrar coordination, domain takedowns, IP null-routing     | RELENTLESS  |
+| 🔥 ERASE     | Persistent infrastructure wipe, no return possible            | STANDARD    |
 
 ---
 
 <p align="center">
-  <em>🔥 Fast. Secure. Precise.</em>
+  <a href="https://ethereum.org/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/ethereum-colored.svg" width="36"/></a>
+  <a href="https://polygon.technology/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/polygon-colored.svg" width="36"/></a>
+  <a href="https://solana.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/solana-colored.svg" width="36"/></a>
+  <a href="https://hardhat.org/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/hardhat-colored.svg" width="36"/></a>
 </p>
+
+---
+
+### <samp style="color:#00ffff">📊 GitHub Stats</samp>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=phishdestroy&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="GitHub Stats"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=phishdestroy&theme=tokyonight&hide_border=true" alt="Streak"/>
+</p>
+
+---
+
+### <samp style="color:#00ffff">🤝 Connect</samp>
+
+<p align="center">
+  <a href="https://github.com/phishdestroy"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32"/></a>
+  <a href="https://twitter.com/Phish_Destroy"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter.svg" width="32"/></a>
+</p>
+
+---
+
+<p align="center"><em style="color:#aaaaaa">Precision ops. No mercy. Full erasure.</em></p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/phishdestroy/phishdestroy/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/phishdestroy/phishdestroy/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/phishdestroy/phishdestroy/output/pacman-contribution-graph.svg">
+
+</picture>
