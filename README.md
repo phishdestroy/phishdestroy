@@ -35,45 +35,45 @@ Personal X/Twitter account: <strong><a href="https://twitter.com/CarlyGriggs13">
 </p>
 🛡️ Operational Doctrine
 
-Method                 
+Method
 	
 
-Description                                                                                             
+Description
 	
 
-Status     
+Status
 
-🌐 SCANNING       
+🌐 SCANNING
 	
 
-Continuous, automated reconnaissance to identify emerging threats and malicious infrastructure.         
+Continuous, automated reconnaissance to identify emerging threats and malicious infrastructure.
 	
 
 ALWAYS-ON
 
-🎯 HUNTING         
+🎯 HUNTING
 	
 
-Deep analysis to map out campaign assets and pinpoint the threat actor's core infrastructure.           
+Deep analysis to map out campaign assets and pinpoint the threat actor's core infrastructure.
 	
 
-ACTIVE   
+ACTIVE
 
-⚡ STRIKING         
+⚡ STRIKING
 	
 
-Swift, coordinated action with network operators and registrars to execute complete takedowns.         
+Swift, coordinated action with network operators and registrars to execute complete takedowns.
 	
 
 RELENTLESS
 
-🔥 ERADICATING     
+🔥 ERADICATING
 	
 
-Post-op forensics and infrastructure burning to ensure threats do not return.                           
+Post-op forensics and infrastructure burning to ensure threats do not return.
 	
 
-STANDARD 
+STANDARD
 📊 GitHub Statistics
 
 <p align="center">
