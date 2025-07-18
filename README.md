@@ -20,13 +20,13 @@
 
 ### <samp style="color:#00ffff">🚀 Operational Impact</samp>
 
-- 💥 <strong>500,000+</strong> phishing domains neutralized
-- 🕵️ <strong>15+</strong> full deanonymizations
-- 🏴‍☠️ <strong>25+</strong> scam networks erased
-- ⛓️ <strong>50+</strong> drainer teams dismantled
+- 💥 <strong>500,000+</strong> phishing domains wiped
+- 🧠 <strong>15+</strong> core actor cells identified & mapped
+- 🧨 <strong>25+</strong> full-scale infrastructure takedowns
+- 🛠️ <strong>50+</strong> crypto-drain kits neutralized
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=500&lines=🔒+They+bought+50.+We+banned+51." alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FFFF&center=true&vCenter=true&multiline=true&width=480&lines=%F0%9F%94%92+They+bought+50.+We+banned+51." alt="Typing SVG"/>
   <img src="https://img.shields.io/badge/Threats-500K+-ff0033?style=flat-square"/>
   <img src="https://img.shields.io/badge/Actor_Networks-25%2B-000000?style=flat-square"/>
 </p>
