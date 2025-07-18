@@ -1,5 +1,5 @@
 <p align="center">
-<img src="image.png" alt="Phish Destroy Banner"/>
+  <img src="image.png" alt="Phish Destroy Banner"/>
 </p>
 
 <h1 align="center" style="color:#00ffff;">🔒 PhishDestroy: Active Threat Neutralization</h1>
@@ -26,7 +26,7 @@
 - ⛓️ <strong>50+</strong> drainer teams dismantled
 
 <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=%F0%9F%94%92+They+bought+50.+We+banned+51." alt="Typing SVG" /></a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=500&lines=🔒+They+bought+50.+We+banned+51." alt="Typing SVG"/>
   <img src="https://img.shields.io/badge/Threats-500K+-ff0033?style=flat-square"/>
   <img src="https://img.shields.io/badge/Actor_Networks-25%2B-000000?style=flat-square"/>
 </p>
@@ -41,7 +41,7 @@
   <a href="https://t.me/PhishDestroyAlerts"><img src="https://img.shields.io/badge/Telegram-Alerts-2CA5E0?style=for-the-badge"/></a>
 </p>
 
-<p align="center"><strong>[@PhishDestroyAlerts](https://t.me/PhishDestroyAlerts)</strong></p>
+<p align="center"><strong><a href="https://t.me/PhishDestroyAlerts">@PhishDestroyAlerts</a></strong></p>
 
 ---
 
@@ -56,9 +56,9 @@
 
 ---
 
+### <samp style="color:#00ffff">🛠️</samp>
+
 <p align="center">
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=%F0%9F%94%92+They+bought+50.+We+banned+51.)](https://git.io/typing-svg)
-  
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/uniswap-colored.svg" width="32"/>
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aave-colored.svg" width="32"/>
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sushiswap-colored.svg" width="32"/>
@@ -86,7 +86,11 @@
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=phishdestroy&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="GitHub Stats"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=phishdestroy&theme=tokyonight&hide_border=true" alt="Streak"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=phishdestroy&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="snake gif"/>
 </p>
 
 ---
@@ -99,11 +103,6 @@
 </p>
 
 ---
-
-<p align="center"><em style="color:#aaaaaa">Precision ops. No mercy. Full erasure.</em></p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="snake gif"/>
-</p>
 
 ## 🤝 Contributing
 
