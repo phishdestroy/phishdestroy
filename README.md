@@ -43,7 +43,7 @@
   <a href="https://t.me/PhishDestroyAlerts"><img src="https://img.shields.io/badge/Telegram-Alerts-2CA5E0?style=for-the-badge"/></a>
 </p>
 
-<p align="center"><strong><a href="https://t.me/PhishDestroyAlerts">@PhishDestroyAlerts</a></strong></p>
+<p align="center"><strong><a href="[https://t.me/PhishDestroyAlerts](https://t.me/destroy_phish)">@destroy_phish</a></strong></p>
 
 ---
 
