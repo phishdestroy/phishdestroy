@@ -13,10 +13,12 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
     
     steps:
-      - name: Generate github-contribution-grid-snake.svg
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Generate snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: phishdestroy
@@ -25,14 +27,14 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
       
       - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-**Шаг 3:** После первого запуска workflow (можешь запустить вручную через Actions), змейка появится по ссылке:
-```
-https://raw.githubusercontent.com/phishdestroy/phishdestroy/output/github-contribution-grid-snake-dark.svg
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          
+          git checkout --orphan output
+          git rm -rf .
+          
+          mv dist/* .
+          git add *.svg
+          git commit -m "Update snake animation" || echo "No changes"
+          git push origin output --force
