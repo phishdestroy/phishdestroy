@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="image.png" alt="PhishDestroy Banner"/>
+  <img src="phishdestroy.gif" alt="PhishDestroy Banner"/>
 </p>
+
 
 <h1 align="center">⚔️ PhishDestroy</h1>
 <h3 align="center">Volunteer-Driven Threat Intelligence & Infrastructure Takedowns</h3>
