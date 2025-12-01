@@ -177,24 +177,27 @@ GitHub Actions workflows for continuous domain collection, validation, and threa
 
 ---
 
-## <a name="stats"></a>📈 Statistics & Activity
+## 📈 Statistics & Activity
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=phishdestroy&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&count_private=true&include_all_commits=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=phishdestroy&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9"/>
+  <img height="180em" src="https://my-readme-stats-wine.vercel.app/api?username=phishdestroy&show_icons=true&theme=dark&hide_border=true" />
+  <img height="180em" src="https://my-readme-stats-wine.vercel.app/api/top-langs/?username=phishdestroy&layout=compact&theme=dark&hide_border=true" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=phishdestroy&theme=dark&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak"/>
+  <img src="https://streak-stats.demolab.com/?user=phishdestroy&theme=dark&hide_border=true" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=phishdestroy&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" />
+  <img src="https://github-profile-trophy.vercel.app/?username=phishdestroy&theme=onedark&no-frame=true&margin-w=15" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=phishdestroy&theme=github-dark&hide_border=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff" alt="Activity Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=phishdestroy&theme=github-dark&hide_border=true" />
 </p>
+
+
+
 
 <details>
 <summary>📊 More Stats</summary>
