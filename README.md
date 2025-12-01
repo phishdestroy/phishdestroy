@@ -1,27 +1,27 @@
 <p align="center">
-  <img src="phishdestroy.gif" alt="PhishDestroy Banner"/>
+  <img src="phishdestroy.gif" width="900" alt="PhishDestroy Banner">
 </p>
-
 
 <h1 align="center">⚔️ PhishDestroy</h1>
-<h3 align="center">Volunteer-Driven Threat Intelligence & Infrastructure Takedowns</h3>
+<h3 align="center">Volunteer-Driven Threat Intelligence • Infrastructure Takedowns • OSINT Automation</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Non--Profit-100%25_Volunteer-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Threats_Eliminated-500K+-critical?style=for-the-badge&logo=target&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Networks_Dismantled-25+-orange?style=for-the-badge&logo=fire&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Status-ACTIVE-success?style=for-the-badge&logo=statuspage&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Non--Profit-100%25_Volunteer-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Threats_Eliminated-500K%2B-critical?style=for-the-badge&logo=target&logoColor=white">
+  <img src="https://img.shields.io/badge/Networks_Dismantled-25%2B-orange?style=for-the-badge&logo=fire&logoColor=white">
+  <img src="https://img.shields.io/badge/Status-ACTIVE-success?style=for-the-badge&logo=statuspage&logoColor=white">
 </p>
 
----
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=2500&pause=800&color=58A6FF&center=true&vCenter=true&width=580&lines=Threat+Intelligence+Network;500%2B+Volunteers+Worldwide;Automated+Scam+%26+Phishing+Elimination;Infrastructure+Takedowns+Since+2019">
+</p>
 
 <p align="center">
   <a href="#mission">Mission</a> •
   <a href="#operations">Operations</a> •
-  <a href="#contribute">Contribute</a> •
-  <a href="#phases">Phases</a> •
-  <a href="#tech">Tech Stack</a> •
+  <a href="#matrix">Operational Matrix</a> •
   <a href="#projects">Projects</a> •
+  <a href="#expertise">Expertise</a> •
   <a href="#stats">Statistics</a> •
   <a href="#contact">Contact</a>
 </p>
@@ -30,105 +30,79 @@
 
 ## <a name="mission"></a>🎯 Mission
 
-**Non-profit volunteer initiative** conducting large-scale detection and elimination of phishing infrastructure and crypto scams through automated reconnaissance, threat intelligence aggregation, and coordinated takedown operations.
+PhishDestroy is a volunteer-driven threat intelligence initiative focused on large-scale detection, analysis, and elimination of:
 
-**Since 2019** | **500,000+ domains neutralized** | **100% volunteer-driven** | **Global operations**
+- Crypto drainers  
+- Phishing networks  
+- Scam infrastructure  
+- Fraudulent applications  
+- Threat actor clusters  
 
-We operate across multiple vectors to identify and neutralize:
-- 💸 Crypto drainers & wallet stealers
-- 🎣 Phishing campaigns & fake services  
-- 🕸️ Scam infrastructure & threat actor networks
-- ⚠️ Fraudulent applications & malicious platforms
+Since 2019, we have:
 
----
-
-## <a name="contribute"></a>🤝 Join the Fight
-
-**Anyone can contribute to phishing elimination!**
-
-Our Telegram bot allows the community to report suspicious domains directly:
-
-🤖 **[@PhishDestroy_bot](https://t.me/PhishDestroy_bot)**
-
-Simply send a domain to the bot, and our volunteers will:
-1. Validate the threat
-2. Analyze infrastructure
-3. Coordinate takedown actions
-4. Add to community blocklists
-
-**Together we're stronger.** Every report helps protect users worldwide.
+- Neutralized 500,000+ malicious domains  
+- Eliminated 25+ actor-controlled infrastructures  
+- Investigated 15+ threat actor groups  
+- Maintained global OSINT feeds and takedown workflows  
 
 ---
 
 ## <a name="operations"></a>📊 Operations Overview
-```
-┌─────────────────────────────────────────────────────────┐
-│ RECONNAISSANCE    │ ████████████████████ │ CONTINUOUS │
-│ ANALYSIS          │ ████████████████████ │ ACTIVE     │
-│ COORDINATION      │ ████████████████████ │ ONGOING    │
-│ NEUTRALIZATION    │ ████████████████████ │ RELENTLESS │
-└─────────────────────────────────────────────────────────┘
-```
 
-| Metric | Count | Status |
-|--------|-------|--------|
-| 🎯 Domains Neutralized | 500,000+ | Continuous |
-| 🕸️ Infrastructure Takedowns | 25+ networks | Active |
-| 🧠 Threat Actor Cells | 15+ mapped | Tracked |
-| ⚰️ Crypto Drain Kits | 50+ eliminated | Ongoing |
+<p align="center">
+RECONNAISSANCE │ ████████████████████ │ CONTINUOUS  
+<br>
+ANALYSIS │ ████████████████████ │ ACTIVE  
+<br>
+COORDINATION │ ████████████████████ │ ONGOING  
+<br>
+NEUTRALIZATION │ ████████████████████ │ RELENTLESS  
+</p>
 
 ---
 
-## <a name="phases"></a>🛡️ Operational Phases
+## <a name="matrix"></a>🛡️ Operational Matrix
 
 <table>
 <tr>
 <td width="25%">
 
-### 🌐 SCAN
-**Autonomous Reconnaissance**
-
-- Certificate Transparency monitoring
-- DNS infrastructure analysis
-- Domain pattern detection
-- Real-time feeds aggregation
-- Community reports processing
+<b>🌐 SCAN</b><br><br>
+• CT logs monitoring<br>
+• DNS anomaly detection<br>
+• Passive DNS + feeds<br>
+• Automated scanners<br>
+• Community submissions
 
 </td>
 <td width="25%">
 
-### 🎯 HUNT
-**Deep Analysis**
-
-- Asset correlation mapping
-- Actor attribution tracking
-- Infrastructure fingerprinting
-- Network relationship graphs
-- Malware & scam validation
+<b>🎯 HUNT</b><br><br>
+• Infra correlation<br>
+• Actor attribution<br>
+• Fingerprinting<br>
+• Network graphing<br>
+• Validation workflows
 
 </td>
 <td width="25%">
 
-### ⚡ STRIKE
-**Coordinated Takedowns**
-
-- Registrar coordination
-- Hosting provider reports
-- DNS null-routing
-- Evidence documentation
-- Law enforcement cooperation
+<b>⚡ STRIKE</b><br><br>
+• Registrar escalation<br>
+• Hosting abuse pipeline<br>
+• Null-routing requests<br>
+• Evidence reporting<br>
+• Multi-team ops
 
 </td>
 <td width="25%">
 
-### 🔥 ERASE
-**Permanent Removal**
-
-- Complete infrastructure wipe
-- Persistent monitoring
-- Re-emergence prevention
-- Zero tolerance enforcement
-- Victim notification
+<b>🔥 ERASE</b><br><br>
+• Infra shutdown<br>
+• Persistence monitoring<br>
+• Re-emergence detection<br>
+• Intelligence linking<br>
+• Zero-tolerance control
 
 </td>
 </tr>
@@ -136,117 +110,90 @@ Simply send a domain to the bot, and our volunteers will:
 
 ---
 
-## <a name="tech"></a>🔧 Tech Stack & Skills
+## <a name="projects"></a>📡 Highlighted Projects
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,php,js,bash,git,github,docker,linux,cloudflare,nginx&theme=dark" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/OSINT-Expert-red?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Threat_Intel-Advanced-orange?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/DNS_Analysis-Professional-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Automation-GitHub_Actions-green?style=for-the-badge"/>
-</p>
-
-**Detection Methods:**
-- Certificate Transparency API monitoring
-- DNS pattern analysis & anomaly detection
-- Blockchain transaction tracking (drainer detection)
-- APK & malware reverse engineering
-- Community threat intelligence aggregation
-
----
-
-## <a name="projects"></a>📡 Active Projects
-
-### 🗂️ [destroylist](https://github.com/phishdestroy/destroylist)
-Multi-feed blocklist repository with automated daily updates, DNS validation, and community aggregation. Used by thousands of users worldwide.
-
-### 🌐 [Live Threat Monitor](https://phishdestroy.io/live/)
-Real-time blocklist visualization, domain lookup interface, and threat statistics dashboard.
-
-### 🤖 [Community Bot](https://t.me/PhishDestroy_bot)
-Telegram bot for community-driven threat reporting and automated domain submission.
-
-### 📰 [Research Blog](https://phishdestroy.ghost.io/)
-Technical analysis, threat reports, and security research publications.
-
-### 🔄 Automated Infrastructure
-GitHub Actions workflows for continuous domain collection, validation, and threat intelligence processing.
-
----
-
-## 📈 Statistics & Activity
-
-<p align="center">
-  <img height="180em" src="https://my-readme-stats-wine.vercel.app/api?username=phishdestroy&show_icons=true&theme=dark&hide_border=true" />
-  <img height="180em" src="https://my-readme-stats-wine.vercel.app/api/top-langs/?username=phishdestroy&layout=compact&theme=dark&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=phishdestroy&theme=dark&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=phishdestroy&theme=onedark&no-frame=true&margin-w=15" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=phishdestroy&theme=github-dark&hide_border=true" />
-</p>
-
-
-
-
-<details>
-<summary>📊 More Stats</summary>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=phishdestroy&theme=github_dark"/>
-</p>
-
-</details>
-
----
-
-## 🐍 Contribution Snake
-<p align="center">
-  <img src="https://raw.githubusercontent.com/phishdestroy/phishdestroy/refs/heads/output/github-contribution-grid-snake-dark.svg" alt="Snake animation"/>
+  <a href="https://github.com/phishdestroy/destroylist">
+    <img src="https://my-readme-stats-wine.vercel.app/api/pin/?username=phishdestroy&repo=destroylist&theme=dark&hide_border=true">
+  </a>
+  <a href="https://github.com/phishdestroy/DestroyScammers">
+    <img src="https://my-readme-stats-wine.vercel.app/api/pin/?username=phishdestroy&repo=DestroyScammers&theme=dark&hide_border=true">
+  </a>
 </p>
 
 ---
 
-## <a name="contact"></a>🤝 Collaboration & Contact
+## 🧠 OSINT Detection Methods
 
-**We actively seek:**
-
-- 💡 **Threat Intelligence** – Novel detection methods and threat indicators
-- 🔗 **Data Sources** – Additional feeds, APIs, and reporting channels  
-- 🛠️ **Technical Contributions** – Code improvements and automation optimization
-- 🌐 **Integration Partners** – Blocklist implementations and third-party platforms
-- 👥 **Volunteers** – Security researchers, developers, analysts
-
-**This is a volunteer-driven non-profit initiative.** We accept no funding and operate purely on community contributions.
+- Certificate Transparency API  
+- DNS anomalies & registrar drift  
+- Hosting & ASN correlation  
+- Blockchain scam transaction analysis  
+- Malware reverse engineering  
+- AI-enhanced phishing kit detection  
+- Automated intelligence clustering  
 
 ---
 
-## 🔗 Links & Community
+## <a name="expertise"></a>🧩 Expertise & Stack
 
 <p align="center">
-  <a href="https://phishdestroy.io/"><img src="https://img.shields.io/badge/Website-phishdestroy.io-blue?style=for-the-badge"/></a>
-  <a href="https://phishdestroy.io/live/"><img src="https://img.shields.io/badge/Live_Monitor-Threat_Dashboard-red?style=for-the-badge"/></a>
-  <a href="https://t.me/PhishDestroy_bot"><img src="https://img.shields.io/badge/Report_Bot-@PhishDestroy__bot-26A5E4?style=for-the-badge&logo=telegram"/></a>
+  <img src="https://skillicons.dev/icons?i=python,php,js,bash,git,github,docker,linux,cloudflare,nginx,redis,mysql&theme=dark">
 </p>
 
 <p align="center">
-  <a href="https://t.me/destroy_phish"><img src="https://img.shields.io/badge/Telegram-@destroy__phish-26A5E4?style=for-the-badge&logo=telegram"/></a>
-  <a href="https://x.com/Phish_Destroy"><img src="https://img.shields.io/badge/X-@Phish__Destroy-000000?style=for-the-badge&logo=x"/></a>
-  <a href="https://mastodon.social/@phishdestroy"><img src="https://img.shields.io/badge/Mastodon-@phishdestroy-6364FF?style=for-the-badge&logo=mastodon&logoColor=white"/></a>
-  <a href="https://phishdestroy.ghost.io/"><img src="https://img.shields.io/badge/Blog-Research_&_Analysis-738A94?style=for-the-badge&logo=ghost&logoColor=white"/></a>
+  <img src="https://img.shields.io/badge/OSINT-Expert-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Threat_Intel-Advanced-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/DNS_Analysis-Pro-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Automation-GitHub_Actions-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Malware_Analysis-Intermediate-purple?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Infra_Mapping-Expert-2832C2?style=for-the-badge">
 </p>
 
 ---
+
+## <a name="stats"></a>📈 Statistics & Activity
+
+<p align="center">
+  <img height="180em" src="https://my-readme-stats-wine.vercel.app/api?username=phishdestroy&show_icons=true&theme=dark&hide_border=true">
+  <img height="180em" src="https://my-readme-stats-wine.vercel.app/api/top-langs/?username=phishdestroy&layout=compact&theme=dark&hide_border=true">
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=phishdestroy&theme=dark&hide_border=true">
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=phishdestroy&theme=onedark&no-frame=true&margin-w=15">
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=phishdestroy&theme=github-dark&hide_border=true">
+</p>
+
+<p align="center">
+  <img src="https://ghchart.rshah.org/58a6ff/phishdestroy">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/phishdestroy/phishdestroy/refs/heads/output/github-contribution-grid-snake-dark.svg">
+</p>
+
+---
+
+## <a name="contact"></a>📬 Contact & Community
+
+<p align="center">
+  <a href="https://phishdestroy.io/">
+    <img src="https://img.shields.io/badge/Website-phishdestroy.io-blue?style=for-the-badge">
+  </a>
+  <a href="https://phishdestroy.io/live/">
+    <img src="https://img.shields.io/badge/Live_Monitor-Threat_Dashboard-red?style=for-the-badge">
+  </a>
+  <a href="https://t.me/PhishDestroy_bot">
+    <img src="https://img.shields.io/badge/Report_Bot-@PhishDestroy__bot-26A5E4?style=for-the-badge&logo=telegram">
+  </a>
+</p>
 
 <p align="center">
   <sub>Evidence-based threat neutralization since 2019</sub><br>
