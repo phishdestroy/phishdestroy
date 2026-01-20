@@ -155,6 +155,11 @@ NEUTRALIZATION │ ████████████████████ 
 ## <a name="stats"></a>📈 Statistics & Activity
 
 <p align="center">
+  
+<a href="https://stats.hyo.dev/stats/phishdestroy"><img src="https://stats.hyo.dev/api/github-stats-advanced?login=phishdestroy" width="600" /></a>
+<a href="https://stats.hyo.dev/stats/phishdestroy"><img src="https://stats.hyo.dev/api/github-trophies?login=phishdestroy" width="600" /></a>
+
+
   <img height="180em" src="https://my-readme-stats-wine.vercel.app/api?username=phishdestroy&show_icons=true&theme=dark&hide_border=true">
   <img height="180em" src="https://my-readme-stats-wine.vercel.app/api/top-langs/?username=phishdestroy&layout=compact&theme=dark&hide_border=true">
 </p>
