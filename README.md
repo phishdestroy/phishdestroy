@@ -120,6 +120,22 @@ NEUTRALIZATION │ ████████████████████ 
     <img src="https://my-readme-stats-wine.vercel.app/api/pin/?username=phishdestroy&repo=DestroyScammers&theme=dark&hide_border=true">
   </a>
 </p>
+<p align="center">
+  <a href="https://github.com/phishdestroy/Operation-Takedown">
+    <img src="https://my-readme-stats-wine.vercel.app/api/pin/?username=phishdestroy&repo=Operation-Takedown&theme=dark&hide_border=true">
+  </a>
+  <a href="https://github.com/phishdestroy/ScamIntelLogs">
+    <img src="https://my-readme-stats-wine.vercel.app/api/pin/?username=phishdestroy&repo=ScamIntelLogs&theme=dark&hide_border=true">
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/phishdestroy/shortdot-evidence">
+    <img src="https://my-readme-stats-wine.vercel.app/api/pin/?username=phishdestroy&repo=shortdot-evidence&theme=dark&hide_border=true">
+  </a>
+  <a href="https://github.com/phishdestroy/nicenic-evidence">
+    <img src="https://my-readme-stats-wine.vercel.app/api/pin/?username=phishdestroy&repo=nicenic-evidence&theme=dark&hide_border=true">
+  </a>
+</p>
 
 ---
 
@@ -138,7 +154,11 @@ NEUTRALIZATION │ ████████████████████ 
 ## <a name="expertise"></a>🧩 Expertise & Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,php,js,bash,git,github,docker,linux,cloudflare,nginx,redis,mysql&theme=dark">
+  <img src="https://skillicons.dev/icons?i=python,go,rust,php,js,bash,git,github,docker,linux,cloudflare,nginx,redis,mysql&theme=dark">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Threat_Intel-YARA_Rules-red?style=flat-square">
+  <img src="https://img.shields.io/badge/Analysis-Malware_RE-orange?style=flat-square">
 </p>
 
 <p align="center">
