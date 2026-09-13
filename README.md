@@ -112,6 +112,13 @@ NEUTRALIZATION │ ████████████████████ 
 
 ## <a name="projects"></a>📡 Highlighted Projects
 
+- **[destroylist](https://github.com/phishdestroy/destroylist)** — Real-time phishing & scam domain blocklist
+- **[DestroyScammers](https://github.com/phishdestroy/DestroyScammers)** — Scam intelligence, phishing attribution, drainer mapping
+- **[Operation-Takedown](https://github.com/phishdestroy/Operation-Takedown)** — Tools and scripts for active phishing infrastructure neutralization
+- **[ScamIntelLogs](https://github.com/phishdestroy/ScamIntelLogs)** — Open-source intelligence archive of crypto scam operations
+- **[shortdot-evidence](https://github.com/phishdestroy/shortdot-evidence)** — ShortDot SA zone abuse evidence package (6.2M domains)
+- **[nicenic-evidence](https://github.com/phishdestroy/nicenic-evidence)** — NICENIC INTERNATIONAL registrar abuse investigation package
+
 <p align="center">
   <a href="https://github.com/phishdestroy/destroylist">
     <img src="https://my-readme-stats-wine.vercel.app/api/pin/?username=phishdestroy&repo=destroylist&theme=dark&hide_border=true">
@@ -152,6 +159,10 @@ NEUTRALIZATION │ ████████████████████ 
 ---
 
 ## <a name="expertise"></a>🧩 Expertise & Stack
+
+- **Languages & Frameworks:** Python, Go, Rust, PHP, JavaScript, Bash
+- **Threat Intelligence & Analysis:** YARA Rules, Malware RE, Infrastructure Mapping
+- **Database & Services:** MySQL, Redis, Nginx, Cloudflare, Docker, Linux, Git/GitHub
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,go,rust,php,js,bash,git,github,docker,linux,cloudflare,nginx,redis,mysql&theme=dark">
