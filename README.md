@@ -114,14 +114,10 @@ NEUTRALIZATION │ ████████████████████ 
 
 - **[destroylist](https://github.com/phishdestroy/destroylist)** — Real-time phishing & scam domain blocklist
 - **[DestroyScammers](https://github.com/phishdestroy/DestroyScammers)** — Scam intelligence, phishing attribution, drainer mapping
-- **[Operation-Takedown](https://github.com/phishdestroy/Operation-Takedown)** — Archived project; retained as a historical reference
+- **[Operation-Takedown](https://github.com/phishdestroy/Operation-Takedown)** — Tools and scripts for active phishing infrastructure neutralization
 - **[ScamIntelLogs](https://github.com/phishdestroy/ScamIntelLogs)** — Open-source intelligence archive of crypto scam operations
 - **[shortdot-evidence](https://github.com/phishdestroy/shortdot-evidence)** — ShortDot SA zone abuse evidence package (6.2M domains)
-- **[nicenic-evidence](https://github.com/phishdestroy/nicenic-evidence)** — Registrar investigation, published ICANN complaint, and supporting evidence
-- **[trustname-evidence](https://github.com/phishdestroy/trustname-evidence)** — Investigation and official enforcement record; ICANN accreditation terminated effective 11 September 2026
-- **[namesilo-evidence](https://github.com/phishdestroy/namesilo-evidence)** — Registrar abuse investigation, case documents, and IOC exports
-
-**Start with the evidence.** [Use the feeds](https://github.com/phishdestroy/destroylist#readme), [explore the investigations](https://phishdestroy.io/), or [read the Trustname enforcement outcome](https://github.com/phishdestroy/trustname-evidence#-enforcement-outcome--credit-to-icann).
+- **[nicenic-evidence](https://github.com/phishdestroy/nicenic-evidence)** — NICENIC INTERNATIONAL registrar abuse investigation package
 
 <p align="center">
   <a href="https://github.com/phishdestroy/destroylist">
