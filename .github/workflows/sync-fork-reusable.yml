@@ -1,0 +1,276 @@
+name: Reusable fork sync
+
+on:
+  workflow_call:
+    inputs:
+      upstream:
+        type: string
+        default: ''
+      recovery_base:
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Merge upstream while preserving fork changes
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SYNC_UPSTREAM: ${{ inputs.upstream }}
+          SYNC_RECOVERY_BASE: ${{ inputs.recovery_base }}
+        run: |
+          python3 - --apply <<'PY'
+          """Merge upstream snapshots without force pushes or running repository code."""
+          import argparse
+          import base64
+          import datetime as dt
+          import json
+          import os
+          from pathlib import Path
+          import re
+          import subprocess
+          import tempfile
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+          
+          STATE_PATH = '.github/fork-sync-state.json'
+          PROTECTED = ['.github/workflows', STATE_PATH]
+          SHA = re.compile(r'^[0-9a-f]{40}$')
+          SLUG = re.compile(r'^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$')
+          
+          
+          class Conflict(RuntimeError):
+              pass
+          
+          
+          class APIError(RuntimeError):
+              def __init__(self, status, message):
+                  self.status = status
+                  super().__init__(f'GitHub API {status}: {message}')
+          
+          
+          def api(path, method='GET', payload=None):
+              request = urllib.request.Request('https://api.github.com/' + path, headers={
+                  'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
+                  'Accept': 'application/vnd.github+json',
+                  'X-GitHub-Api-Version': '2022-11-28',
+                  'Content-Type': 'application/json',
+              }, method=method, data=json.dumps(payload).encode() if payload is not None else None)
+              try:
+                  with urllib.request.urlopen(request, timeout=60) as response:
+                      return json.load(response)
+              except urllib.error.HTTPError as exc:
+                  body = json.load(exc)
+                  raise APIError(exc.code, body.get('message', 'Request failed')) from None
+          
+          
+          def git_env():
+              env = os.environ.copy()
+              env.update(GIT_TERMINAL_PROMPT='0', GIT_CONFIG_NOSYSTEM='1',
+                         GIT_CONFIG_GLOBAL=os.devnull,
+                         GIT_AUTHOR_NAME='github-actions[bot]',
+                         GIT_COMMITTER_NAME='github-actions[bot]',
+                         GIT_AUTHOR_EMAIL='41898282+github-actions[bot]@users.noreply.github.com',
+                         GIT_COMMITTER_EMAIL='41898282+github-actions[bot]@users.noreply.github.com')
+              # Credentials remain in the process environment, never in URLs or git config files.
+              if os.environ.get('GH_TOKEN'):
+                  value = base64.b64encode(('x-access-token:' + os.environ['GH_TOKEN']).encode()).decode()
+                  env.update(GIT_CONFIG_COUNT='1', GIT_CONFIG_KEY_0='http.https://github.com/.extraheader',
+                             GIT_CONFIG_VALUE_0='AUTHORIZATION: basic ' + value)
+              return env
+          
+          
+          def git(folder, *args, data=None, check=True):
+              result = subprocess.run(['git', '-C', str(folder), *args], input=data,
+                                      stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                      env=git_env(), timeout=600)
+              if check and result.returncode:
+                  # Do not print arbitrary remote output, credentials, or file contents.
+                  raise RuntimeError(f'git {args[0]} failed (exit {result.returncode})')
+              return result
+          
+          
+          def value(folder, *args, data=None):
+              return git(folder, *args, data=data).stdout.decode().strip()
+          
+          
+          def unprotected_tree(folder, commit):
+              git(folder, 'read-tree', commit)
+              paths = git(folder, 'ls-tree', '-r', '--name-only', '-z', commit, '--', *PROTECTED).stdout
+              if paths:
+                  git(folder, 'update-index', '--force-remove', '-z', '--stdin', data=paths)
+              return value(folder, 'write-tree', '--missing-ok')
+          
+          
+          def merge_snapshots(folder, base, ours, theirs, state):
+              # Strip workflow/state paths from all three trees before merging. Upstream workflows
+              # cannot overwrite our schedule or become executable in a fork through this sync.
+              trees = [unprotected_tree(folder, sha) for sha in [base, ours, theirs]]
+              common = value(folder, 'commit-tree', trees[0], data=b'Snapshot merge base\n')
+              left = value(folder, 'commit-tree', trees[1], '-p', common, data=b'Fork snapshot\n')
+              right = value(folder, 'commit-tree', trees[2], '-p', common, data=b'Upstream snapshot\n')
+              merged = git(folder, 'merge-tree', '--write-tree', '--name-only', '-z', left, right, check=False)
+              parts = merged.stdout.split(b'\0')
+              if merged.returncode == 1:
+                  conflicts = []
+                  for part in parts[1:]:
+                      if not part:
+                          break
+                      conflicts.append(part.decode('utf-8', errors='replace'))
+                  raise Conflict('Merge conflict; branch unchanged: ' + ', '.join(conflicts[:20]))
+              if merged.returncode != 0 or not SHA.fullmatch(parts[0].decode()):
+                  raise RuntimeError('Unable to merge snapshots; branch unchanged')
+              git(folder, 'read-tree', parts[0].decode())
+              own_workflows = git(folder, 'ls-tree', '-r', '-z', ours, '--', '.github/workflows').stdout
+              if own_workflows:
+                  git(folder, 'update-index', '-z', '--index-info', data=own_workflows)
+              content = (json.dumps(state, indent=2, sort_keys=True) + '\n').encode()
+              blob = value(folder, 'hash-object', '-w', '--stdin', data=content)
+              git(folder, 'update-index', '--add', '--cacheinfo', '100644,' + blob + ',' + STATE_PATH)
+              tree = value(folder, 'write-tree', '--missing-ok')
+              # Check the invariant on the final tree, not merely on the merge inputs.
+              assert git(folder, 'ls-tree', '-r', '-z', tree, '--', '.github/workflows').stdout == own_workflows
+              return tree
+          
+          
+          def sync(repository, upstream_override='', recovery_base='', apply=False):
+              assert SLUG.fullmatch(repository) and repository.split('/')[0].lower() == 'phishdestroy'
+              metadata = api('repos/' + repository)
+              if metadata['archived'] or metadata.get('disabled') or not metadata['fork']:
+                  return {'repository': repository, 'status': 'skipped: not an active fork'}
+              upstream = upstream_override or metadata['parent']['full_name']
+              assert SLUG.fullmatch(upstream)
+              parent = api('repos/' + upstream)
+              if parent['archived'] or parent.get('disabled'):
+                  return {'repository': repository, 'status': 'skipped: upstream archived or disabled'}
+              branch = metadata['default_branch']
+              parent_branch = parent['default_branch']
+              ours = api('repos/' + repository + '/git/ref/heads/' + urllib.parse.quote(branch, safe=''))['object']['sha']
+              theirs = api('repos/' + upstream + '/git/ref/heads/' + urllib.parse.quote(parent_branch, safe=''))['object']['sha']
+              state = {}
+              try:
+                  raw = api('repos/' + repository + '/contents/' + STATE_PATH + '?ref=' + ours)
+                  state = json.loads(base64.b64decode(raw['content']))
+              except APIError as exc:
+                  if exc.status != 404:
+                      raise
+              now = dt.datetime.now(dt.timezone.utc)
+              last = dt.datetime.fromisoformat(state['checked_at']) if state.get('checked_at') else None
+              heartbeat_due = last is None or (now - last).days >= 30
+              if state.get('upstream') == upstream and state.get('upstream_commit') == theirs and not heartbeat_due:
+                  return {'repository': repository, 'status': 'already current', 'upstream': upstream}
+              rewritten = False
+              try:
+                  comparison = api('repos/' + repository + '/compare/' + theirs + '...' + ours + '?per_page=1')
+                  base = comparison['merge_base_commit']['sha']
+                  if comparison['behind_by'] == 0 and not heartbeat_due:
+                      return {'repository': repository, 'status': 'already current', 'upstream': upstream}
+              except APIError as exc:
+                  if exc.status != 404:
+                      raise
+                  # Only a recorded previous upstream snapshot (or an audited migration baseline)
+                  # is safe after upstream rewrites history. Never guess an unrelated merge base.
+                  base = state.get('upstream_commit') if state.get('upstream') == upstream else recovery_base
+                  if not base or not SHA.fullmatch(base):
+                      raise RuntimeError('Upstream history changed; no trusted baseline. Branch unchanged.')
+                  rewritten = True
+              assert all(SHA.fullmatch(s) for s in [base, ours, theirs])
+              new_state = {'version': 1, 'upstream': upstream, 'upstream_branch': parent_branch,
+                           'upstream_commit': theirs, 'checked_at': now.isoformat(),
+                           'workflow_policy': 'preserve fork workflows; never import upstream workflows'}
+              with tempfile.TemporaryDirectory(prefix='phishdestroy-sync-') as tmp:
+                  folder = Path(tmp)
+                  git(folder, 'init', '--quiet')
+                  for remote, slug in [('origin', repository), ('upstream', upstream)]:
+                      git(folder, 'remote', 'add', remote, 'https://github.com/' + slug + '.git')
+                      git(folder, 'config', 'remote.' + remote + '.promisor', 'true')
+                      git(folder, 'config', 'remote.' + remote + '.partialclonefilter', 'blob:none')
+                  # Three shallow snapshots avoid downloading years of feed history.
+                  for remote, sha in dict.fromkeys([('origin', ours), ('upstream', theirs), ('origin', base)]):
+                      git(folder, 'fetch', '--quiet', '--filter=blob:none', '--no-tags', '--depth=1', remote, sha)
+                  tree = merge_snapshots(folder, base, ours, theirs, new_state)
+                  changes = value(folder, 'diff-tree', '--no-commit-id', '--no-renames', '--name-only', '-r', ours, tree).splitlines()
+                  parents = ['-p', ours] + (['-p', theirs] if ours != theirs else [])
+                  commit = value(folder, 'commit-tree', tree, *parents,
+                                 data=('chore: sync ' + upstream + ' (preserve fork changes)\n').encode())
+                  record = {'repository': repository, 'upstream': upstream, 'branch': branch,
+                            'status': 'prepared', 'changed_files': len(changes),
+                            'upstream_history_rewritten': rewritten, 'previous_head': ours,
+                            'upstream_head': theirs, 'commit': commit}
+                  if apply:
+                      current = api('repos/' + repository + '/git/ref/heads/' + urllib.parse.quote(branch, safe=''))['object']['sha']
+                      if current != ours:
+                          raise RuntimeError('Fork changed during merge; retry on the next run. Branch unchanged.')
+                      # Publish the small delta through Git Data. Existing upstream blobs stay
+                      # on GitHub; huge feeds do not need downloading and uploading again.
+                      changed = git(folder, 'diff-tree', '--no-commit-id', '--no-renames', '--name-only',
+                                    '-r', '-z', theirs, tree).stdout.split(b'\0')
+                      entries = []
+                      for raw_path in changed:
+                          if not raw_path:
+                              continue
+                          path = raw_path.decode('utf-8')
+                          item = git(folder, 'ls-tree', '-z', tree, '--', path).stdout
+                          if not item:
+                              entries.append({'path': path, 'mode': '100644', 'type': 'blob', 'sha': None})
+                              continue
+                          info = item.split(b'\t', 1)[0].decode().split()
+                          mode, kind, sha = info
+                          if kind == 'blob':
+                              # Reuse original fork/upstream blobs when possible. Only a newly
+                              # merged blob or the state file needs an upload.
+                              known = any(sha in git(folder, 'ls-tree', '-z', revision, '--', path).stdout.decode()
+                                          for revision in [ours, theirs, base])
+                              if not known:
+                                  content = git(folder, 'cat-file', 'blob', sha).stdout
+                                  uploaded = api('repos/' + repository + '/git/blobs', 'POST',
+                                                 {'encoding': 'base64', 'content': base64.b64encode(content).decode()})
+                                  assert uploaded['sha'] == sha
+                          entries.append({'path': path, 'mode': mode, 'type': kind, 'sha': sha})
+                      upstream_tree = value(folder, 'rev-parse', theirs + '^{tree}')
+                      uploaded_tree = api('repos/' + repository + '/git/trees', 'POST',
+                                          {'base_tree': upstream_tree, 'tree': entries})
+                      assert uploaded_tree['sha'] == tree
+                      uploaded_commit = api('repos/' + repository + '/git/commits', 'POST',
+                                            {'message': 'chore: sync ' + upstream + ' (preserve fork changes)',
+                                             'tree': tree, 'parents': [ours] + ([theirs] if ours != theirs else [])})
+                      if api('repos/' + repository + '/git/ref/heads/' + urllib.parse.quote(branch, safe=''))['object']['sha'] != ours:
+                          raise RuntimeError('Fork changed during upload; branch unchanged. Retry next run.')
+                      api('repos/' + repository + '/git/refs/heads/' + urllib.parse.quote(branch, safe=''),
+                          'PATCH', {'sha': uploaded_commit['sha'], 'force': False})
+                      record['commit'] = uploaded_commit['sha']
+                      record['status'] = 'updated'
+                  return record
+          
+          
+          def main():
+              parser = argparse.ArgumentParser()
+              parser.add_argument('--apply', action='store_true')
+              args = parser.parse_args()
+              repository = os.environ['GITHUB_REPOSITORY']
+              try:
+                  result = sync(repository, os.environ.get('SYNC_UPSTREAM', ''),
+                                os.environ.get('SYNC_RECOVERY_BASE', ''), args.apply)
+              except Exception as exc:
+                  message = str(exc)
+                  print('Sync failed: ' + message)
+                  if os.environ.get('GITHUB_STEP_SUMMARY'):
+                      with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
+                          f.write('### Upstream sync needs attention\n\n' + message + '\n')
+                  raise SystemExit(1)
+              print(json.dumps(result, sort_keys=True))
+              if os.environ.get('GITHUB_STEP_SUMMARY'):
+                  with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
+                      f.write('### Upstream sync\n\n```json\n' + json.dumps(result, indent=2) + '\n```\n')
+          
+          
+          if __name__ == '__main__':
+              main()
+          PY
