@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="157" height="34" viewBox="0 0 157 34" role="img" aria-label="PUBLIC API: NO KEY">
+    <title>PUBLIC API: NO KEY</title>
+    <clipPath id="edge"><rect width="157" height="34" rx="4"/></clipPath>
+    <g clip-path="url(#edge)"><rect width="92" height="34" fill="#26313e"/><rect x="92" width="65" height="34" fill="#167d95"/>
+    <path d="M0 1H157" stroke="#ffffff" opacity=".12"/></g>
+    <g fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing=".7" text-anchor="middle">
+    <text x="46.0" y="21">PUBLIC API</text><text x="124.5" y="21">NO KEY</text></g></svg>
