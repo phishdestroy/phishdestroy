@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="143" height="34" viewBox="0 0 143 34" role="img" aria-label="REPORT: TELEGRAM">
+    <title>REPORT: TELEGRAM</title>
+    <clipPath id="edge"><rect width="143" height="34" rx="4"/></clipPath>
+    <g clip-path="url(#edge)"><rect width="65" height="34" fill="#26313e"/><rect x="65" width="78" height="34" fill="#1685bc"/>
+    <path d="M0 1H143" stroke="#ffffff" opacity=".12"/></g>
+    <g fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing=".7" text-anchor="middle">
+    <text x="32.5" y="21">REPORT</text><text x="104.0" y="21">TELEGRAM</text></g></svg>

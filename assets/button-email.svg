@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="34" viewBox="0 0 130 34" role="img" aria-label="EMAIL: CONTACT">
+    <title>EMAIL: CONTACT</title>
+    <clipPath id="edge"><rect width="130" height="34" rx="4"/></clipPath>
+    <g clip-path="url(#edge)"><rect width="58" height="34" fill="#26313e"/><rect x="58" width="72" height="34" fill="#405a80"/>
+    <path d="M0 1H130" stroke="#ffffff" opacity=".12"/></g>
+    <g fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" letter-spacing=".7" text-anchor="middle">
+    <text x="29.0" y="21">EMAIL</text><text x="94.0" y="21">CONTACT</text></g></svg>

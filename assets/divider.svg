@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="28" viewBox="0 0 1200 28" role="img" aria-label="Section divider">
+<defs><linearGradient id="line" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0"><stop stop-color="#ff506f" stop-opacity="0"/><stop offset=".35" stop-color="#ff506f" stop-opacity=".7"/><stop offset=".5" stop-color="#ff506f"/><stop offset=".65" stop-color="#58a6ff" stop-opacity=".7"/><stop offset="1" stop-color="#58a6ff" stop-opacity="0"/></linearGradient></defs>
+<path d="M0 14H566M634 14H1200" stroke="url(#line)" stroke-width="1.5"/>
+<path d="M580 14L588 6L596 14L588 22Z" fill="none" stroke="#ff506f" opacity=".55"/>
+<path d="M597 14L605 6L613 14L605 22Z" fill="#ff506f"><animate attributeName="opacity" values=".4;1;.4" dur="3s" repeatCount="indefinite"/></path>
+<path d="M614 14L622 6L630 14L622 22Z" fill="none" stroke="#58a6ff" opacity=".55"/>
+<circle cx="140" cy="14" r="2" fill="#ff6b81"><animate attributeName="cx" values="140;460;140" dur="6s" repeatCount="indefinite"/></circle><circle cx="1060" cy="14" r="2" fill="#58a6ff"><animate attributeName="cx" values="1060;740;1060" dur="6s" repeatCount="indefinite"/></circle></svg>
