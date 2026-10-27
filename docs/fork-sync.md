@@ -16,8 +16,8 @@ is stored. It merges shallow snapshots without running code from the fork.
   A monthly state refresh keeps quiet forks from reaching GitHub's 60-day
   scheduled-workflow inactivity limit.
 - Archived/disabled repositories and upstreams are skipped.
-- `public_feed` follows the original `openphish/public_feed`, rather than its
-  stale intermediate fork. TweetFeed and Hagezi have audited initial recovery
+- Each fork follows its actual GitHub parent. The separate `openphish` fork
+  provides the current OpenPhish feed. TweetFeed and Hagezi have audited initial recovery
   snapshots because their upstream histories were rewritten.
 - The `DO-NOT-USE-xmrwallet-com` investigation remains outside automatic sync.
 
